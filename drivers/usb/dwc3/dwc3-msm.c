@@ -262,6 +262,7 @@ struct dwc3_msm {
 	struct delayed_work sdp_check;
 	bool usb_compliance_mode;
 	struct mutex suspend_resume_mutex;
+    enum usb_device_speed override_usb_speed;
 	bool			ext_typec_switch;
 	bool                    ss_compliance;
 	struct gpio		mod_switch_gpio;
