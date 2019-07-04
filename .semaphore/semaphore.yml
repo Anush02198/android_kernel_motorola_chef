@@ -13,3 +13,4 @@ blocks:
           # install postgres and redis clients
           - pwd
           - ls
+          - checkout
