@@ -1,0 +1,17 @@
+version: v1.0
+name: Dark One kernel
+agent:
+  machine:
+    type: e1-standard-2    # Linux machine type with 2 vCPUs, 4 GB of RAM
+    os_image: ubuntu1804   # The Ubuntu 18.04 OS image.
+blocks:
+  - name: "Hello"
+    task:
+      jobs:
+      - name: Hello
+        commands:
+          # install postgres and redis clients
+          - pwd
+          - ls
+          - checkout
+          - ls
