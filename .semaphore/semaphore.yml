@@ -11,4 +11,5 @@ blocks:
       - name: Hello
         commands:
           # install postgres and redis clients
-          - sudo apt-get -y update && apt-get install postgresql-client redis-tools
+          - pwd
+          - ls
