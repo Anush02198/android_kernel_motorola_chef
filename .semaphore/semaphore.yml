@@ -10,4 +10,8 @@ blocks:
       prologue:
         commands:
           - git clone https://github.com/akhilnarang/scripts && cd scripts && bash setup/android_build_env.sh && cd -
+      jobs:
+        -name: Sample test 1
+        commands:
+          - ls
           
