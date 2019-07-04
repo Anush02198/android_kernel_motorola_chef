@@ -5,13 +5,10 @@ agent:
     type: e1-standard-2    # Linux machine type with 2 vCPUs, 4 GB of RAM
     os_image: ubuntu1804   # The Ubuntu 18.04 OS image.
 blocks:
-  - name: "Test"
+  - name: "Hello"
     task:
-      prologue:
-        commands:
-          - git clone https://github.com/akhilnarang/scripts && cd scripts && bash setup/android_build_env.sh && cd -
       jobs:
-        -name: Sample test 1
+      - name: Hello
         commands:
-          - ls
-          
+          # install postgres and redis clients
+          - apt-get -y update && apt-get install postgresql-client redis-tools
