@@ -104,7 +104,6 @@ static int free_reserved_pages(unsigned long pfn, unsigned long count)
 	unsigned long base_pfn;
 	struct zone *zone;
 
-	count = count >> pageblock_order;
 	cma->bitmap = kzalloc(bitmap_size, GFP_KERNEL);
 
 	if (!cma->bitmap) {
